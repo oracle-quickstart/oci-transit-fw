@@ -119,7 +119,9 @@ This setup leverages four Oracle Cloud Infrastructure VCNs within the same tenan
 * Internet Gateway (IGW)
 * A Virtual Machine to simulate traffic flows to Spoke and OnPrem
 
+## Traffic Flow High Level
 ![Traffic Flow High Level](traffic-flow.gif)
+## Detailed DRG Routing
 ![Detailed DRG Routing](detailed-drg-routing.png)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
