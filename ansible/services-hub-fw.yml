@@ -1,0 +1,49 @@
+---
+- hosts: all
+  become: yes
+
+  tasks:
+
+  - name: Enable Ibr_netfilter IPv4
+    copy:
+      dest: /etc/sysctl.conf
+      content: |
+        net.ipv4.ip_forward = 1
+        net.ipv4.conf.default.rp_filter = 0
+        net.ipv4.conf.all.rp_filter = 0
+        net.ipv4.conf.all.send_redirects = 0
+        net.ipv4.conf.default.send_redirects = 0
+        net.ipv4.icmp_ignore_bogus_error_responses = 1
+        net.ipv4.conf.default.log_martians = 0
+        net.ipv4.conf.all.log_martians = 0
+        net.ipv4.conf.default.accept_source_route = 0
+        net.ipv6.conf.default.accept_source_route = 0
+        net.ipv4.conf.all.accept_redirects = 0
+        net.ipv6.conf.all.accept_redirects = 0
+        net.ipv4.conf.default.accept_redirects = 0
+        net.ipv6.conf.default.accept_redirects = 0
+    become_user: root
+    
+  - name: Apply Persistent IPv4 Forwarding
+    shell: sudo sysctl -p
+    become_user: root
+
+  - name: Disable Selinux
+    shell: sudo setenforce 0
+    become_user: root
+
+  - name: Disable Firewalld
+    shell: sudo systemctl stop firewalld
+    become_user: root
+
+  - name: Add routes
+    shell: sudo ip route add 192.168.101.0/25 via 192.168.100.1
+    become_user: root
+
+  - name: Add routes
+    shell: sudo ip route add 192.168.102.0/25 via 192.168.100.1
+    become_user: root
+
+  - name: Add routes
+    shell: sudo ip route add 172.16.100.00/25 via 192.168.100.1
+    become_user: root
