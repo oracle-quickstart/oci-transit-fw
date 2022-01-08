@@ -83,7 +83,7 @@ Below are the versions of software that were used at the time this code was crea
 * [Quagga](https://www.quagga.net/), version = 1.2.0
 * [Terraform](https://www.terraform.io/), version = 1.1.3
 * [OCI Terraform Provider](https://registry.terraform.io/providers/hashicorp/oci/latest), version = 4.58.0
-* [Ansible](https://www.ansible.com/), version = core 2.12
+* [Ansible](https://www.ansible.com/), version = core 2.12.1
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
