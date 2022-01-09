@@ -66,11 +66,11 @@
 
 Transit routing refers to a network topology in which your on-premises network uses an intermediary to reach Oracle resources or services or VCNs. The intermediary can be a VCN or a dynamic routing gateway (DRG)  your on-premises network is already attached to. You connect the on-premises network to a DRG with FastConnect or Site-to-Site VPN, and then configure routing so that traffic transits through the intermediary to its destination.
 
-Read more about Transit routing inside a services VCN [here] (https://docs.oracle.com/en-us/iaas/Content/Network/Tasks/transitrouting.htm)
+Read more about Transit routing inside a services VCN [here](https://docs.oracle.com/en-us/iaas/Content/Network/Tasks/transitrouting.htm)
 
-**Use Cases:**
+**Use Case:**
 
-* Access between multiple networks through a single DRG with a firewall between networks: This scenario uses the DRG as the hub, with routing configured to send packets through a firewall in a VCN before they can be sent to another network. See Using a DRG to route traffic through a centralized network virtual appliance. This scenario is only available to an implementation using an upgraded DRG.
+Access between multiple networks through a single DRG with a firewall between networks: This scenario uses the DRG as the hub, with routing configured to send packets through a firewall in a VCN before they can be sent to another network. See Using a DRG to route traffic through a centralized network virtual appliance. This scenario is only available to an implementation using an upgraded DRG.
 
 
 #### Built With:
@@ -132,7 +132,7 @@ This setup leverages four Oracle Cloud Infrastructure VCNs within the same tenan
 ### Prerequisites
 1. Install Terraform
 2. Install Ansible
-3. Access to Oracle CLoud Infastructure
+3. Access to Oracle Cloud Infastructure
 3. Download or clone the repo to your local machine
   ```sh
   git clone git@github.com:oracle-quickstart/oci-transit-fw.git
@@ -181,7 +181,6 @@ The following error is a know issue and will occur on first Terraform apply.  Re
 │   on networking.tf line 305, in resource "oci_core_ipsec_connection_tunnel_management" "oci-ipsec-connection-tunnel-management-b":
 │  305: resource "oci_core_ipsec_connection_tunnel_management" "oci-ipsec-connection-tunnel-management-b" {
   ```
-2. *tf-ansible-extra-vars.yml* is dynamically generated.  The file exits in the repo as an example but should be removed prior to first Terraform run or there can exist a race condition.
 
 <!-- CONTACT -->
 ## Contact
