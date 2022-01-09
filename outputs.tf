@@ -66,20 +66,6 @@ output "OnPrem-Libreswan_public-ip" {
 output "OnPrem-Libreswan_private-ip" {
   value = oci_core_instance.onprem-vcn-libreswan-instance.private_ip
 }
-
-##################################################################################
-# Output for Services-Hub DRG
-##################################################################################
-output "Services-Hub-DRG-id" {
-  value = oci_core_drg.services-hub-vcn-drg.id
-}
-##################################################################################
-# Output for Spoke-A VCN ID
-##################################################################################
-output "Spoke-A-VCN-id" {
-  value = oci_core_vcn.spoke-a-vcn.id
-}
-
 ##################################################################################
 # Output for IPSEC tunnel-a headend IP address VCN
 ##################################################################################
@@ -91,10 +77,4 @@ output "IPSEC-Tunnel-A-IP" {
 ##################################################################################
 output "IPSEC-Tunnel-B-IP" {
   value = data.oci_core_ipsec_connection_tunnels.oci-ipsec-connection-tunnels.ip_sec_connection_tunnels[1].vpn_ip
-}
-##################################################################################
-# Output Services-FW Private IP OCID
-##################################################################################
-output "Services-Hub-FW-Private-IP-OCID" {
-  value = data.oci_core_private_ips.services-hub-vcn-instance-private-ips-datasource.id
 }
