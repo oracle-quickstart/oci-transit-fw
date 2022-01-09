@@ -119,9 +119,9 @@ This setup leverages four Oracle Cloud Infrastructure VCNs within the same tenan
 * A Virtual Machine to simulate traffic flows to Spoke and OnPrem
 
 ## Traffic Flow High Level
-![Traffic Flow High Level](traffic-flow.gif)
+![Traffic Flow High Level](./images/traffic-flow.gif)
 ## Detailed DRG Routing
-![Detailed DRG Routing](detailed-drg-routing.png)
+![Detailed DRG Routing](./images/detailed-drg-routing.png)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
