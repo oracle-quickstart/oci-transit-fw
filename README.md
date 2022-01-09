@@ -70,8 +70,7 @@ Read more about Transit routing inside a services VCN [here](https://docs.oracle
 
 **Use Case:**
 
-Access between multiple networks through a single DRG with a firewall between networks: This scenario uses the DRG as the hub, with routing configured to send packets through a firewall in a VCN before they can be sent to another network. See Using a DRG to route traffic through a centralized network virtual appliance. This scenario is only available to an implementation using an upgraded DRG.
-
+Access between multiple networks through a single DRG with a firewall between networks: This scenario uses the DRG as the hub, with routing configured to send packets through a firewall in a VCN before they can be sent to another network. See Using a DRG to route traffic through a centralized network virtual appliance. 
 
 #### Built With:
 
