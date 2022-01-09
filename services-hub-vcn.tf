@@ -133,7 +133,7 @@ resource "oci_core_route_table" "fw-subnet-route-table" {
         #Required
         network_entity_id = oci_core_drg.services-hub-vcn-drg.id
         #Optional
-        destination = var.onprem_subnet_cidr
+        destination = var.onprem_cidr_block
     }
 }
 
