@@ -39,5 +39,9 @@ terraform.rc
 # Ignore Auto Generated Vars files for Ansible
 tf-ansible-extra-vars.yml 
 
-# Ignore venv python file
+# General
+**scratch**
+.DS_Store
+.AppleDouble
+.LSOverride
 .python-version
