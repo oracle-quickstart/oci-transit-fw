@@ -186,7 +186,7 @@ The following error is a know issue and will occur on first Terraform apply.  Re
 <!-- CONTACT -->
 ## Contact
 
-Troy Levin - troy.levin@oracle.com
+Troy Levin - feedback_oci_virtual_networking_us_grp@oracle.com
 
 Project Link: [https://github.com/oracle-quickstart/oci-transit-fw](https://github.com/oracle-quickstart/oci-transit-fw)
 
