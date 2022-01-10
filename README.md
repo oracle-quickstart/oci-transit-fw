@@ -64,6 +64,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+Version 1.0.0
+
 Transit routing refers to a network topology in which your on-premises network uses an intermediary to reach Oracle resources or services or VCNs. The intermediary can be a VCN or a dynamic routing gateway (DRG)  your on-premises network is already attached to. You connect the on-premises network to a DRG with FastConnect or Site-to-Site VPN, and then configure routing so that traffic transits through the intermediary to its destination.
 
 Read more about Transit routing inside a services VCN [here](https://docs.oracle.com/en-us/iaas/Content/Network/Tasks/transitrouting.htm)
