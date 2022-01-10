@@ -36,4 +36,8 @@ override.tf.json
 .terraformrc
 terraform.rc
 
+# Ignore Auto Generated Vars files for Ansible
 tf-ansible-extra-vars.yml 
+
+# Ignore venv python file
+.python-version
