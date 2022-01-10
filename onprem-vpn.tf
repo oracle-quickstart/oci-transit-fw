@@ -23,7 +23,7 @@ resource "oci_core_ipsec" "oci-ipsec-connection" {
   cpe_id         = oci_core_cpe.oci-ipsec-cpe.id
   drg_id         = oci_core_drg.services-hub-vcn-drg.id
   static_routes  = [var.onprem_subnet_cidr]
-  # static_routes  = [""]
+  # static_routes  = []
 
   #Optional
   cpe_local_identifier      = oci_core_instance.onprem-vcn-libreswan-instance.public_ip
